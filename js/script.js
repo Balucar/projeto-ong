@@ -312,3 +312,19 @@ setTimeout(function () {
 }, 4000);
     });
 }
+// Modo de alto contraste
+const botaoContraste = document.getElementById('botao-contraste');
+
+if (botaoContraste) {
+    botaoContraste.addEventListener('click', () => {
+        const contrasteAtivo = document.body.classList.toggle('alto-contraste');
+
+        botaoContraste.setAttribute('aria-pressed', contrasteAtivo);
+        botaoContraste.setAttribute(
+            'aria-label',
+            contrasteAtivo
+                ? 'Desativar modo de alto contraste'
+                : 'Ativar modo de alto contraste'
+        );
+    });
+}

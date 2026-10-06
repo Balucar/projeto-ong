@@ -458,3 +458,30 @@ button:disabled {
     background-color: #f0fff4;
     outline: none;
 }
+/* Modo de alto contraste */
+body.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+body.alto-contraste header,
+body.alto-contraste main,
+body.alto-contraste section,
+body.alto-contraste footer {
+    background-color: #000;
+    color: #fff;
+}
+
+body.alto-contraste a {
+    color: #ffff00;
+}
+
+body.alto-contraste button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ffff00;
+}
+
+#botao-contraste {
+    cursor: pointer;
+}
